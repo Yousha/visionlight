@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+   android:key="pref_settings"
+   android:orderingFromXml="true"
+   android:title="@string/title_settings">
+   <PreferenceCategory
+      android:key="prfctg_application"
+      android:order="1"
+      android:orderingFromXml="true"
+      android:title="@string/category_application">
+      <CheckBoxPreference
+         android:defaultValue="@bool/bool_true"
+         android:key="pref_settings_autoclearcache"
+         android:order="2"
+         android:summary="@string/summary_autoclearcache"
+         android:title="@string/caption_clearcache" />
+      <CheckBoxPreference
+         android:defaultValue="@bool/bool_true"
+         android:key="pref_settings_vibrate"
+         android:order="3"
+         android:title="@string/caption_vibrate" />
+      <CheckBoxPreference
+         android:defaultValue="@bool/bool_false"
+         android:key="pref_settings_addshortcut"
+         android:order="4"
+         android:summary="@string/summary_createappshortcut"
+         android:title="@string/caption_addshortcut" />
+   </PreferenceCategory>
+   <Preference
+      android:key="pref_settings_restoredefault"
+      android:order="5"
+      android:summary="@string/summary_restoreappsettings"
+      android:title="@string/caption_restoredefault" />
+   <Preference
+      android:key="pref_settings_viewappsyssettings"
+      android:order="6"
+      android:title="@string/summary_viewappsyssettings" />
+</PreferenceScreen>

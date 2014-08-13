@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item
+      android:id="@+id/menu_main_key"
+      android:alphabeticShortcut="O"
+      android:menuCategory="alternative"
+      android:numericShortcut="1"
+      android:orderInCategory="1"
+      android:title="@string/action_turnon" />
+   <item
+      android:id="@+id/menu_main_settings"
+      android:alphabeticShortcut="S"
+      android:menuCategory="alternative"
+      android:numericShortcut="2"
+      android:orderInCategory="2"
+      android:title="@string/title_settings" />
+   <item
+      android:id="@+id/menu_main_options"
+      android:alphabeticShortcut="P"
+      android:menuCategory="alternative"
+      android:numericShortcut="3"
+      android:orderInCategory="3"
+      android:title="@string/title_options" />
+   <item
+      android:id="@+id/menu_main_about"
+      android:alphabeticShortcut="A"
+      android:menuCategory="alternative"
+      android:numericShortcut="4"
+      android:orderInCategory="4"
+      android:title="@string/title_about" />
+   <item
+      android:id="@+id/menu_main_exit"
+      android:alphabeticShortcut="X"
+      android:menuCategory="alternative"
+      android:numericShortcut="5"
+      android:orderInCategory="5"
+      android:title="@string/action_exit" />
+</menu>

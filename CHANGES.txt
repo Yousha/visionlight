@@ -1,0 +1,55 @@
+1.1.10 - build 8 - 2019/1397
+-------------------------
+* Fix minor bugs.
+* Improve application performance.
+
+1.1.8 - build 6 - 2019/1397
+-------------------------
+* Fix minor bugs.
+
+1.1.7 - build 5 - 2016/1395
+-------------------------
+* Add "Settings" menu.
+* Add setting for application's cache, vibrate, shortcut, default setting, system setting.
+* Add "Feedback" option.
+* Add "Logs" option.
+* Add memory improvement option.
+* Add "Clear cache" option.
+* Add "Latest changes" option.
+* Add battery-low detection.
+* Remove unused permissions.
+* Corrected grammar mistakes.
+* Reduced memory usage.
+* Fix network detection problems.
+* Fix incompatibility with Android 4.
+* Fix incompatibility with Nexus and Samsung devices.
+* Fix stuck at white background-color.
+* Fix minor bugs.
+* Improve "About" activity.
+* Improve theme and user-interface.
+* Improve application performance.
+
+1.0.5 - build 4 - 2015/1394
+-------------------------
+* Add Numeric & Alphabetic shortcuts for menu.
+* Add "Options" menu.
+* Add "Check for updates" option.
+* Fix minor bugs.
+* Improve application performance.
+
+1.0.2 - build 3 - 2014/1393
+-------------------------
+* Add compatibility with phones without camera.
+* Remove Arabic language.
+* Fix the flashlight problem on some Samsung phones.
+* Fix installation problem.
+* Fix minor bugs.
+* Improve application performance.
+
+1.0.1 - build 2 - 2014/1393
+-------------------------
+Fix package problem.
+
+1.0.0 - build 1 - 2014/1393
+-------------------------
+Initial release.

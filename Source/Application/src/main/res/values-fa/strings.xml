@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+   <!-- Action -->
+   <string name="action_back">بازگشت</string>
+   <string name="action_cancel">بیخیال</string>
+   <string name="action_close">بستن</string>
+   <string name="action_copy">کپی</string>
+   <string name="action_exit">خروج</string>
+   <string name="action_no">خیر</string>
+   <string name="action_ok">باشه</string>
+   <string name="action_roamingsettings">تنظیمات رومینگ</string>
+   <string name="action_send">ارسـال</string>
+   <string name="action_turnoff">خاموش</string>
+   <string name="action_turnon">روشن</string>
+   <string name="action_wifisettings">تنظیمات وای فای</string>
+   <string name="action_yes">بله</string>
+   <!-- Caption -->
+   <string name="caption_addshortcut">اضافه کردن میانبر</string>
+   <string name="caption_checkforupdate">بررسی برای نسخه جدید</string>
+   <string name="caption_clearcache">پاکسازی کش</string>
+   <string name="caption_contact">تماس</string>
+   <string name="caption_email">پست الکترونیک (اختیاری)</string>
+   <string name="caption_improvememory">بهبود حافظه برنامه</string>
+   <string name="caption_languages">زبانها</string>
+   <string name="caption_latestchanges">مشاهده تغییرات اخیر</string>
+   <string name="caption_license">پروانه</string>
+   <string name="caption_lastupdate">آخرین بروزرسانی</string>
+   <string name="caption_architecture">معماری</string>
+   <string name="caption_link">پیوند</string>
+   <string name="caption_message">پـیـام</string>
+   <string name="caption_name">نام</string>
+   <string name="caption_platform">بستر</string>
+   <string name="caption_maintainer">نگهدارنده</string>
+   <string name="caption_producer">تولید کننده</string>
+   <string name="caption_restoredefault">برگرداندن به حالت پیشفرض</string>
+   <string name="caption_version">نسخه</string>
+   <string name="caption_vibrate">لرزاننده</string>
+   <!-- Error -->
+   <string name="error_processingrequest">درحین پردازش درخواست شما خطایی رخ داد،
+      مجدداً تملاش نمایید.
+   </string>
+   <string name="error_requesttimedout">مهلت درخواست به پایان رسید، دوباره
+      امتحان کنید.
+   </string>
+   <string name="error_sendingrequest">مشکلی در اجرا/ارسال درخواست وجود دارد،
+      بعداً مجدداً تلاش نمایید.
+   </string>
+   <!-- Message -->
+   <string name="message_appdoesnothaveperm">هشدار: برنامه دسترسی های لازم را
+      ندارد.
+   </string>
+   <string name="message_appisuptodate">شما در حال حاضر از آخرین نسخه استفاده می
+      نمایید.
+   </string>
+   <string name="message_batteryislow">توجه: شارژ باطری کم است.</string>
+   <string name="message_cantbeempty">نمی تواند خالی بماند</string>
+   <string name="message_exitapplication">آیا می خواهید از برنامه خارج شوید؟
+   </string>
+   <string name="message_gotomarketdownload">به مارکت مراجعه و آنرا دریافت
+      نمایید.
+   </string>
+   <string name="message_invalidemail">پست الکترونیک معتبر نمی باشد</string>
+   <string name="message_memoryfreed">%s از حافظه برنامه آزاد شد.</string>
+   <string name="message_memoryislow">هشدار! حافظه مجازی دستگاه كم است، برنامه
+      های دیگر را ببندید یا دستگاه را
+      خاموش/روشن کنید.
+   </string>
+   <string name="message_messagesent">پیام شما ارسال شد.</string>
+   <string name="message_newversionisavailable">نسخه جدید این برنامه موجود می
+      باشد!
+   </string>
+   <string name="message_nointernet">شما به اینترنت متصل نمی باشید.</string>
+   <string name="message_nologs">هیچ گزارشی برای نمایش وجود ندارد.</string>
+   <string name="message_nonewchanges">هیچ تغییر جدیدی وجود ندارد.</string>
+   <!-- Summary -->
+   <string name="summary_appdescription">برنامه رایگان چراغ قوه برای
+      دستگاه های مبتنی بر اندروید. سبک، عاری از
+      باگ و بدون تبلیغات!
+   </string>
+   <string name="summary_autoclearcache">بصورت خودکار کش برنامه در حین خروج پاک
+      شود.
+   </string>
+   <string name="summary_clearappcache">پاک کردن کش این برنامه.</string>
+   <string name="summary_lastupdate">1397</string>
+   <string name="summary_createappshortcut">ساخت میانبر برنامه بر روی صفحه اصلی
+      دستگاه.
+   </string>
+   <string name="summary_feedback">ارسال نظرات، پیشنهادات و اشکالات.</string>
+   <string name="summary_languages">انگلیسی، پارسی</string>
+   <string name="summary_latestchanges">
+      &#160;رفع باگهای جزیی.
+   </string>
+   <string name="summary_link">http://yousha.blog.ir</string>
+   <string name="summary_developer">یوشا آل ایوب</string>
+   <string name="summary_maintainer">یوشا آل ایوب</string>
+   <string name="summary_restoreappsettings">برگرداندن تنظیمات برنامه به حالت
+      پیشفرض.
+   </string>
+   <string name="summary_suggestrungc">درخواست از ماشین مجازی برای اجرای GC و
+      Rt-Finalization.
+   </string>
+   <string name="summary_touchopenapp">برای بازشدن برنامه لمس کنید.</string>
+   <string name="summary_viewappsyssettings">مشاهده تنظیمات سیستمی برنامه
+   </string>
+   <string name="summary_viewerrorlogs">مشاهده گزارش خطاهای رخ داده در این
+      برنامه.
+   </string>
+   <string name="summary_key">کلید</string>
+   <!-- Title -->
+   <string name="title_about">درباره</string>
+   <string name="title_appname">ویژن لایت</string>
+   <string name="title_options">امکانات</string>
+   <string name="title_settings">تنظیمات</string>
+   <string name="title_errorlogs">گزارشات خطا</string>
+   <string name="title_feedback">بازخورد</string>
+   <string name="title_debuginformation">اطلاعات دیباگ</string>
+   <!-- Other -->
+   <string name="category_application">برنامه</string>
+   <string name="checking">در حال بررسی…</string>
+   <string name="currentversion">نسخه کنونی: %1$s</string>
+   <string name="ishere">%1$s اینجاست</string>
+   <string name="newversion">نسخه جدید: %1$s</string>
+   <string name="preparing">در حال آماده سازی…</string>
+   <string name="processing">در حال پردازش…</string>
+   <string name="android">اندروید %1$s - %2$s</string>
+</resources>

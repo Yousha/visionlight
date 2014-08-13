@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/layout_errorlogs"
+   style="@style/container_vertical"
+   android:contentDescription="@string/title_errorlogs"
+   tools:context="application.OptionsPreference">
+
+   <EditText
+      android:id="@+id/edit_errorlogs_logs"
+      style="@style/edit_multiline_disabled"
+      android:layout_above="@+id/layout_errorlogs_buttons"
+      android:textSize="12sp"
+      tools:ignore="LabelFor" />
+
+   <LinearLayout
+      android:id="@+id/layout_errorlogs_buttons"
+      style="@style/container_horizontal_bottom">
+
+      <Button
+         android:id="@+id/button_errorlogs_cancel"
+         style="@style/button_multiplie"
+         android:hint="@string/action_cancel"
+         android:text="@string/action_cancel" />
+
+      <Button
+         android:id="@+id/button_errorlogs_copy"
+         style="@style/button_multiplie"
+         android:hint="@string/action_copy"
+         android:text="@string/action_copy" />
+   </LinearLayout>
+</RelativeLayout>

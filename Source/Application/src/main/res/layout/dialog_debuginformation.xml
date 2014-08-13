@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/layout_debuginformation"
+   style="@style/container_vertical"
+   android:contentDescription="@string/title_debuginformation"
+   tools:context="application.OptionsPreference">
+
+   <EditText
+      android:id="@+id/edit_debuginformation_data"
+      style="@style/edit_multiline_disabled"
+      android:layout_above="@+id/layout_debuginformation_buttons"
+      android:textSize="12sp"
+      tools:ignore="LabelFor" />
+
+   <LinearLayout
+      android:id="@+id/layout_debuginformation_buttons"
+      style="@style/container_horizontal_bottom">
+
+      <Button
+         android:id="@+id/button_debuginformation_cancel"
+         style="@style/button_multiplie"
+         android:hint="@string/action_cancel"
+         android:text="@string/action_cancel" />
+
+      <Button
+         android:id="@+id/button_debuginformation_copy"
+         style="@style/button_multiplie"
+         android:hint="@string/action_copy"
+         android:text="@string/action_copy" />
+   </LinearLayout>
+</RelativeLayout>

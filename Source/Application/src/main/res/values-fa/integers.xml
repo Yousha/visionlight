@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+   <integer name="layout_gravity">5</integer>
+   <integer name="gravity">21</integer>
+   <integer name="gravity_edit_multiline">53</integer>
+</resources>

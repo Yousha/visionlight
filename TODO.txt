@@ -1,0 +1,21 @@
+* Add "add to contact" in about.
+* Add auto-complete name, email... in text boxes. (remember)
+* Add automatic update checker.
+* Add global exception handler.
+* Add internet check on "send feedback" button.
+* Add lock in settings to lock everything while Flashlight is on.
+* Add proxy support.
+* Add setting for language changer and backup/restore settings.
+* Add sound on flashlight.
+* Add widget.
+* Add battery status in no flash mode.
+* Auto change keyboard language on EditText. (email...)
+* Change name in feedback to optional. and add android:hint name.
+* Check for airplane mode. (boolean isEnabled = Settings.System.getInt(getContentResolver(), Settings.System.AIRPLANE_MODE_ON, 0) == 1;)
+* Fix notification on rotate.
+* Fix shortcut app problems.
+* Generate docs.
+* Check http://stackoverflow.com/questions/2735102/ideal-way-to-cancel-an-executing-asynctask
+* Organize colors, strings, dimens and... 
+* Use merge/include to re-use widgets.
+* Write/Read exceptions to/from cache.

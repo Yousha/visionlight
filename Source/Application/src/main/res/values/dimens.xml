@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+   <dimen name="padding">5dp</dimen>
+   <dimen name="edit_multiline_minheight">200dp</dimen>
+   <dimen name="match_parent">-2px</dimen>
+   <dimen name="wrap_content">-3px</dimen>
+   <item name="weight_medium" format="float" type="dimen">0.5</item>
+</resources>

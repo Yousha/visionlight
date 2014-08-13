@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/scroll_feedback"
+   style="@style/container_vertical"
+   android:contentDescription="@string/title_feedback"
+   tools:context="application.OptionsPreference">
+
+   <LinearLayout style="@style/container_vertical">
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_name" />
+
+      <EditText
+         android:id="@+id/edit_feedback_name"
+         style="@style/edit_name"
+         tools:ignore="LabelFor" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_email" />
+
+      <EditText
+         android:id="@+id/edit_feedback_email"
+         style="@style/edit_email"
+         tools:ignore="LabelFor" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_message" />
+
+      <EditText
+         android:id="@+id/edit_feedback_message"
+         style="@style/edit_multiline_message"
+         tools:ignore="LabelFor">
+
+         <requestFocus />
+      </EditText>
+
+      <RelativeLayout style="@style/container_horizontal_bottom">
+
+         <Button
+            android:id="@+id/button_feedback_cancel"
+            style="@style/button_bottom_multiplie"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/view_feedback_blank"
+            android:hint="@string/action_cancel"
+            android:text="@string/action_cancel" />
+
+         <View
+            android:id="@+id/view_feedback_blank"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true" />
+
+         <Button
+            android:id="@+id/button_feedback_send"
+            style="@style/button_bottom_multiplie"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/view_feedback_blank"
+            android:hint="@string/action_send"
+            android:text="@string/action_send" />
+      </RelativeLayout>
+   </LinearLayout>
+</ScrollView>

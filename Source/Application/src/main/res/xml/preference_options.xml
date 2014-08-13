@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+   android:key="pref_options"
+   android:orderingFromXml="true"
+   android:title="@string/title_options">
+   <Preference
+      android:key="pref_options_checkforupdate"
+      android:order="1"
+      android:title="@string/caption_checkforupdate" />
+   <Preference
+      android:key="pref_options_feedback"
+      android:order="2"
+      android:summary="@string/summary_feedback"
+      android:title="@string/title_feedback" />
+   <Preference
+      android:key="pref_options_errorlogs"
+      android:order="3"
+      android:summary="@string/summary_viewerrorlogs"
+      android:title="@string/title_errorlogs" />
+   <Preference
+      android:key="pref_options_improvememory"
+      android:order="4"
+      android:summary="@string/summary_suggestrungc"
+      android:title="@string/caption_improvememory" />
+   <Preference
+      android:key="pref_options_clearcache"
+      android:order="5"
+      android:summary="@string/summary_clearappcache"
+      android:title="@string/caption_clearcache" />
+   <Preference
+      android:key="pref_options_latestchanges"
+      android:order="6"
+      android:title="@string/caption_latestchanges" />
+   <Preference
+      android:key="pref_options_debuginformation"
+      android:order="7"
+      android:title="@string/title_debuginformation" />
+</PreferenceScreen>

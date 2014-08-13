@@ -1,0 +1,119 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.getkeepsafe.dexcount'
+
+android
+{
+    //noinspection GradleCompatible
+    compileSdkVersion 10
+    buildToolsVersion '29.0.2'
+
+    defaultConfig
+    {
+        applicationId "yousha.application.visionlight"
+        //noinspection MinSdkTooLow
+        minSdkVersion 10
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 22
+        versionCode 8
+        versionName "1.1.10"
+        /*
+            The Android Testing Support Library collects analytics to continuously improve the testing
+            experience. More specifically, it uploads a hash of the package name of the application
+            under test for each invocation. If you do not wish to upload this data, you can opt-out by
+            passing the following argument to the test runner: disableAnalytics "true".
+        */
+        testInstrumentationRunnerArguments disableAnalytics: 'true'
+    }
+
+    compileOptions
+    {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        encoding = "UTF-8"
+    }
+
+   tasks.withType(JavaCompile)
+   {
+      options.encoding = 'UTF-8'
+      options.debug = true
+      options.failOnError = true
+      options.warnings = true
+      options.incremental = true
+      //options.compilerArgs << '-Xlint:deprecation' << '-Xlint:unchecked'
+   }
+
+    buildTypes
+    {
+        debug
+        {
+            //myCustomConfig "String", "SERVER_URL", "http://domain/" // BuildConfig.SERVER_URL
+            debuggable true
+            jniDebuggable true
+            renderscriptDebuggable true
+            renderscriptOptimLevel 0
+            minifyEnabled false // Requires shrinkResources TRUE to shrink resources.
+            zipAlignEnabled true
+            shrinkResources false // Requires minifyEnabled TRUE to shrink resources.
+            //useProguard false // Obsolete
+            crunchPngs false
+            multiDexEnabled = false
+        }
+        release
+        {
+            //myCustomConfig "String", "SERVER_URL", "http://domain/" // BuildConfig.SERVER_URL
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            renderscriptOptimLevel 3
+            minifyEnabled true // Requires shrinkResources TRUE to shrink resources.
+            zipAlignEnabled true
+            shrinkResources true // Requires minifyEnabled TRUE to shrink resources.
+            //useProguard true // Obsolete
+            crunchPngs true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            multiDexEnabled = false
+        }
+    }
+
+    adbOptions
+    {
+        timeOutInMs = 30 * 1000 // Fixes ShellCommandUnresponsiveException
+    }
+
+    productFlavors
+    {
+    }
+
+    lintOptions
+    {
+      checkReleaseBuilds true
+      quiet false
+      abortOnError true
+      ignoreWarnings false
+      checkAllWarnings true
+      warningsAsErrors false
+      noLines true
+      showAll true
+      textReport true
+      htmlReport true
+      xmlReport true
+      textOutput 'stdout'
+      disable 'TypographyFractions', 'TypographyQuotes'
+      enable 'RtlHardcoded', 'RtlCompat', 'RtlEnabled'
+    }
+}
+
+ext
+{
+    //myCustomConfig "String", "SERVER_URL", "http://domain/" // BuildConfig.SERVER_URL
+    versions = [
+        android_support_library: "29.0.2"
+    ]
+}
+
+// compile/implementation: the dependencies need to compile the project
+// runtime/runtimeOnly: the dependencies need to run the project
+dependencies
+{
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+}

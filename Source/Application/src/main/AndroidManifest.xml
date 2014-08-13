@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--suppress XmlWrongRootElement -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   package="yousha.application.visionlight"
+   android:installLocation="auto">
+
+   <uses-feature
+      android:name="android.hardware.screen.portrait"
+      android:required="true" />
+   <uses-feature
+      android:name="android.hardware.wifi"
+      android:required="false" />
+   <uses-feature
+      android:name="android.hardware.camera"
+      android:required="false" />
+   <uses-feature
+      android:name="android.hardware.camera.autofocus"
+      android:required="false" />
+   <uses-feature
+      android:name="android.hardware.camera.flash"
+      android:required="false" />
+
+   <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+   <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+   <uses-permission android:name="android.permission.INTERNET" />
+   <uses-permission android:name="android.permission.VIBRATE" />
+   <uses-permission android:name="android.permission.CAMERA" />
+   <uses-permission
+      android:name="android.permission.FLASHLIGHT"
+      android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+      android:protectionLevel="normal" />
+   <!-- Nexus bug fix. -->
+   <uses-permission android:name="android.permission.WAKE_LOCK" />
+   <!-- <uses-permission android:name="android.permission.SET_ORIENTATION"/> -->
+
+   <supports-screens
+      android:anyDensity="true"
+      android:largeScreens="true"
+      android:normalScreens="true"
+      android:resizeable="true"
+      android:smallScreens="true"
+      android:xlargeScreens="true" />
+
+   <application
+      android:allowBackup="true"
+      android:allowClearUserData="true"
+      android:description="@string/summary_appdescription"
+      android:icon="@drawable/ic_launcher"
+      android:killAfterRestore="true"
+      android:label="@string/title_appname"
+      android:testOnly="false"
+      tools:ignore="GoogleAppIndexingWarning">
+      <activity
+         android:name="application.MainActivity"
+         android:configChanges="orientation|keyboardHidden"
+         android:description="@string/title_appname"
+         android:icon="@drawable/ic_launcher"
+         android:label="@string/title_appname"
+         android:launchMode="singleTask"
+         android:noHistory="false"
+         android:screenOrientation="portrait">
+         <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+            <category android:name="android.intent.category.DEFAULT" />
+         </intent-filter>
+      </activity>
+      <activity
+         android:name="application.SettingsPreference"
+         android:configChanges="orientation|keyboardHidden"
+         android:description="@string/title_settings"
+         android:exported="false"
+         android:icon="@drawable/ic_launcher"
+         android:label="@string/title_settings"
+         android:launchMode="singleTask"
+         android:noHistory="false">
+         <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="application.MainActivity" />
+      </activity>
+      <activity
+         android:name="application.OptionsPreference"
+         android:configChanges="orientation|keyboardHidden"
+         android:description="@string/title_options"
+         android:exported="false"
+         android:icon="@drawable/ic_launcher"
+         android:label="@string/title_options"
+         android:launchMode="singleTask"
+         android:noHistory="false">
+         <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="application.MainActivity" />
+      </activity>
+      <activity
+         android:name="application.AboutActivity"
+         android:configChanges="orientation|keyboardHidden"
+         android:description="@string/title_about"
+         android:exported="false"
+         android:icon="@drawable/ic_launcher"
+         android:label="@string/title_about"
+         android:launchMode="singleTask"
+         android:noHistory="false">
+         <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="application.MainActivity" />
+      </activity>
+   </application>
+</manifest>

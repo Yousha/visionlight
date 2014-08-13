@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/scroll_about"
+   style="@style/container_vertical"
+   android:contentDescription="@string/title_about"
+   tools:context="application.AboutActivity">
+
+   <LinearLayout style="@style/container_vertical">
+
+      <TextView
+         style="@style/mix_appnameicon"
+         android:text="@string/title_appname" />
+
+      <TextView
+         style="@style/text_summary"
+         android:text="@string/summary_appdescription" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_version" />
+
+      <TextView
+         android:id="@+id/text_about_versionsummary"
+         style="@style/text_summary" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_languages" />
+
+      <TextView
+         style="@style/text_summary"
+         android:text="@string/summary_languages" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_license" />
+
+      <TextView
+         android:id="@+id/text_about_licensesummary"
+         style="@style/text_web" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_lastupdate" />
+
+      <TextView
+         style="@style/text_summary"
+         android:text="@string/summary_lastupdate" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_maintainer" />
+
+      <TextView
+         style="@style/text_summary"
+         android:text="@string/summary_maintainer" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_producer" />
+
+      <TextView
+         style="@style/text_summary"
+         android:text="@string/summary_developer" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_contact" />
+
+      <TextView
+         android:id="@+id/text_about_contactsummary"
+         style="@style/text_email" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_link" />
+
+      <TextView
+         style="@style/text_web"
+         android:text="@string/summary_link" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_platform" />
+
+      <TextView
+         android:id="@+id/text_about_platformsummary"
+         style="@style/text_summary" />
+
+      <TextView
+         style="@style/text_caption"
+         android:text="@string/caption_architecture" />
+
+      <TextView
+         android:id="@+id/text_about_architecturesummary"
+         style="@style/text_summary" />
+
+      <RelativeLayout style="@style/container_horizontal_bottom">
+
+         <Button
+            android:id="@+id/button_about_ok"
+            style="@style/button_bottom_single"
+            android:hint="@string/action_ok"
+            android:text="@string/action_ok" />
+      </RelativeLayout>
+   </LinearLayout>
+</ScrollView>

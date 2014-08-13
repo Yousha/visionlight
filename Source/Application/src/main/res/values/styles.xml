@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <style name="_matchparent">
+      <item name="android:layout_width">@dimen/match_parent</item>
+      <item name="android:layout_height">@dimen/match_parent</item>
+   </style>
+
+   <style name="_wrapcontent">
+      <item name="android:layout_width">@dimen/wrap_content</item>
+      <item name="android:layout_height">@dimen/wrap_content</item>
+   </style>
+
+   <style name="_mw">
+      <item name="android:layout_width">@dimen/match_parent</item>
+      <item name="android:layout_height">@dimen/wrap_content</item>
+   </style>
+
+   <style name="_link" parent="_wrapcontent">
+      <item name="android:layout_gravity">left</item>
+      <item name="android:gravity">left</item>
+      <item name="android:paddingTop">@dimen/padding</item>
+      <item name="android:paddingBottom">@dimen/padding</item>
+      <item name="android:clickable">true</item>
+      <item name="android:longClickable">true</item>
+      <item name="android:linksClickable">true</item>
+      <item name="android:focusable">true</item>
+   </style>
+
+   <style name="_edit_normal" parent="_mw">
+      <item name="android:minLines">1</item>
+      <item name="android:lines">1</item>
+      <item name="android:maxLines">1</item>
+      <item name="android:maxLength">255</item>
+      <item name="android:singleLine">true</item>
+      <item name="android:autoLink">none</item>
+   </style>
+
+   <style name="_noclicknofocus">
+      <item name="android:clickable">false</item>
+      <item name="android:longClickable">false</item>
+      <item name="android:linksClickable">false</item>
+      <item name="android:focusable">false</item>
+      <item name="android:focusableInTouchMode">false</item>
+      <item name="android:selectAllOnFocus">false</item>
+   </style>
+
+   <style name="container_vertical" parent="_matchparent">
+      <item name="android:orientation">vertical</item>
+      <item name="android:fillViewport">true</item>
+      <item name="android:padding">@dimen/padding</item>
+   </style>
+
+   <style name="container_horizontal_bottom" parent="_mw">
+      <item name="android:orientation">horizontal</item>
+      <item name="android:fillViewport">true</item>
+      <item name="android:layout_alignParentBottom">true</item>
+   </style>
+
+   <style name="image_key" parent="_wrapcontent">
+      <item name="android:layout_gravity">center</item>
+      <item name="android:clickable">true</item>
+      <item name="android:src">@drawable/ic_switchoff</item>
+   </style>
+
+   <style name="mix_appnameicon" parent="_wrapcontent">
+      <item name="android:layout_alignParentTop">true</item>
+      <item name="android:layout_gravity">center</item>
+      <item name="android:gravity">center</item>
+      <item name="android:drawableLeft">@drawable/ic_launcher</item>
+      <item name="android:textAppearance">?android:attr/textAppearanceLarge
+      </item>
+      <item name="android:textStyle">bold</item>
+   </style>
+
+   <style name="text_caption" parent="_wrapcontent">
+      <item name="android:layout_gravity">@integer/layout_gravity</item>
+      <item name="android:gravity">@integer/gravity</item>
+      <item name="android:textAppearance">?android:attr/textAppearanceMedium
+      </item>
+   </style>
+
+   <style name="text_summary" parent="_wrapcontent">
+      <item name="android:layout_gravity">@integer/layout_gravity</item>
+      <item name="android:gravity">@integer/gravity</item>
+      <item name="android:paddingTop">@dimen/padding</item>
+      <item name="android:paddingBottom">@dimen/padding</item>
+      <item name="android:textAppearance">?android:attr/textAppearanceSmall
+      </item>
+   </style>
+
+   <style name="text_web" parent="_link">
+      <item name="android:autoLink">web</item>
+   </style>
+
+   <style name="text_email" parent="_link">
+      <item name="android:autoLink">email</item>
+   </style>
+
+   <style name="edit_email" parent="_edit_normal">
+      <item name="android:layout_gravity">left</item>
+      <item name="android:gravity">center|left</item>
+      <item name="android:inputType">textEmailAddress</item>
+   </style>
+
+   <style name="edit_name" parent="_edit_normal">
+      <item name="android:layout_gravity">@integer/layout_gravity</item>
+      <item name="android:gravity">@integer/gravity</item>
+      <item name="android:inputType">
+         textCapSentences|textPersonName|textNoSuggestions
+      </item>
+   </style>
+
+   <style name="edit_multiline_message" parent="_mw">
+      <item name="android:minHeight">@dimen/edit_multiline_minheight</item>
+      <item name="android:layout_gravity">@integer/layout_gravity</item>
+      <item name="android:gravity">@integer/gravity_edit_multiline</item>
+      <item name="android:scrollbars">vertical</item>
+      <item name="android:maxLength">5120</item>
+      <item name="android:singleLine">false</item>
+      <item name="android:autoLink">none</item>
+      <item name="android:inputType">textMultiLine</item>
+   </style>
+
+   <style name="edit_multiline_disabled" parent="_noclicknofocus">
+      <item name="android:layout_width">@dimen/match_parent</item>
+      <item name="android:layout_height">@dimen/match_parent</item>
+      <item name="android:layout_gravity">left</item>
+      <item name="android:gravity">top|left</item>
+      <item name="android:maxLength">5120</item>
+      <item name="android:autoLink">none</item>
+      <item name="android:inputType">none</item>
+      <item name="android:typeface">monospace</item>
+   </style>
+
+   <style name="button_bottom_single" parent="_mw">
+      <item name="android:layout_alignParentBottom">true</item>
+      <item name="android:gravity">center</item>
+   </style>
+
+   <style name="button_bottom_multiplie" parent="_wrapcontent">
+      <item name="android:layout_alignParentBottom">true</item>
+      <item name="android:layout_weight">@dimen/weight_medium</item>
+      <item name="android:gravity">center</item>
+   </style>
+
+   <style name="button_multiplie" parent="_mw">
+      <item name="android:layout_weight">@dimen/weight_medium</item>
+      <item name="android:gravity">center</item>
+   </style>
+</resources>

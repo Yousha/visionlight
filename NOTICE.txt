@@ -1,0 +1,6 @@
+This product includes softwares developed by the following copyright owners:
+
+* .gitignore (CC0-1.0) <https://github.com/github/gitignore>
+* Android Framework (Apache 2.0 license) <http://android.com>
+* Apache HttpComponents (Apache 2.0 license) <https://hc.apache.org>
+* XMLPull library (Public domain license) <http://xmlpull.org>
