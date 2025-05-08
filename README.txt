@@ -1,29 +1,11 @@
 Visionlight 1.1.10 build 8
 =========================
 
-Contents/Menu
--------------------------
-* Description
-* Languages
-* License
-* Requirements
-* Features
-* Download
-* Installation/Deployment
-* Usage
-* FAQ
-* Changes/Updates
-* Documentation/Wiki
-* Issues/Feedbacks
-* Contributing
-* Contributors
-* ToDo
-* Credits
-
 Description
 -------------------------
-An free torch application for Android based devices. Lightweight, bug-free
-   and without ads!
+An free torch application for Android(>=2) based devices. Lightweight, bug-free and without ads.
+
+Bazaar app store link: https://cafebazaar.ir/app/yousha.application.visionlight?l=en
 
 Languages
 -------------------------
@@ -41,42 +23,9 @@ Requirements
 3. JDK +6(1.6.0)
 4. Eclipse IDE or Intellij IDEA or Android Studio +2
 
-Features
--------------------------
-*  
-
-Download
--------------------------
-Download the latest version:
-* Gitlab:
-   * Zip: 
-   * tAr.GZ: 
-   * Git: 
-* BitBucket:
-   * Zip: 
-   * tAr.GZ: 
-   * tAr.Bz2: 
-
-Installation/Deployment
--------------------------
-
-Usage
--------------------------
-
-FAQ
--------------------------
-
 Changes/Updates
 -------------------------
 See CHANGES.txt
-
-Documentation/Wiki
--------------------------
-
-Issues/Feedbacks
--------------------------
-* Email: yousha.a@hotmail.com
-* Website: http://yousha.blog.ir/
 
 Contributing
 -------------------------
@@ -92,4 +41,4 @@ See TODO.txt
 
 Credits
 -------------------------
-* Yousha Aleayoub (Owner/Producer/Maintainer) <yousha.a@hotmail.com>
+* Yousha Aleayoub (Maintainer, Developer) <yousha.a@hotmail.com>
